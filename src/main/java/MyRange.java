@@ -4,6 +4,6 @@ public class MyRange {
     }
 
     public boolean endWithInclude(String input) {
-        return true;
+        return input.endsWith("]");
     }
 }
