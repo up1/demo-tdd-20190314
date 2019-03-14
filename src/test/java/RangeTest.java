@@ -5,6 +5,14 @@ import static org.junit.Assert.*;
 public class RangeTest {
 
     @Test
+    public void endWith_bracket() {
+        MyRange r = new MyRange();
+        boolean actualResult
+                = r.endWithInclude("[1,5]");
+        assertTrue("ต้องปิดด้วย [", actualResult);
+    }
+
+    @Test
     public void เริ่มต้นด้วย_bracket() {
         MyRange r = new MyRange();
         boolean actualResult
